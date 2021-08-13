@@ -1,0 +1,163 @@
+.style1 {
+    font-family: 'Roboto', Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: solid;
+    border-color: black;
+    background-color: rgb(226, 239, 218);
+    text-align: center;
+    vertical-align: middle; 
+    height: 50px;
+}
+
+.style2 {
+    font-family: 'Roboto', Verdana, Arial, Helvetica, sans-serif;
+    border: solid;
+    border-color: black;
+    text-align: center;
+    vertical-align: middle;
+    height: 25px;
+}
+
+.titlePage{
+    color: lightseagreen;
+    font-family: "DejaVu Sans";
+}
+
+.footerPage{
+    position: fixed;
+    bottom: 0;
+    background-color: whitesmoke;
+}
+
+div + p {
+    color: red;
+}/*
+  Hide radio button (the round disc)
+  we will use just the label to create pushbutton effect
+*/
+input[type=radio] {
+    display:none;
+    margin:10px;
+}
+
+input[type=radio] + label {
+    display:inline-block;
+    margin:-2px;
+    padding: 4px 15px;
+
+    background-color: whitesmoke; /*#e7e7e7;*/
+    /*border-color: lightseagreen; #ddd;*/
+
+}
+
+div[id='Frente'] input[type=radio]:checked + label{
+    background-image: none;
+    background-color:lightcoral;
+    color:black;
+}
+
+#popup {
+    visibility: hidden;
+    opacity: 0;
+    margin-top: -300px;
+}
+#popup:target {
+    visibility:visible;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:0;
+    z-index: 999;
+    transition:all 1s;
+}
+.popup-contenedor {
+    position: relative;
+    margin:7% auto;
+    padding:0 0 20px 0;
+    background-color: #fafafa;
+    color:#333;
+    border-radius: 3px;
+    width:50%;
+}
+a.popup-cerrar {
+    position: absolute;
+    top:3px;
+    right:3px;
+    /*background-color: #333;*/
+    background-color: lightseagreen;
+    padding:7px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 1;
+    color:#fff;
+}
+
+#popup {
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:0;
+    /* Animación que durará 2 segundos*/
+    animation:autopopup 2s;
+}
+
+/******************/
+
+#popupSuccess {
+    visibility: hidden;
+    opacity: 0;
+    margin-top: -300px;
+}
+#popupSuccess:target {
+    visibility:visible;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:0;
+    z-index: 999;
+    transition:all 1s;
+}
+.popupSuccess-contenedor {
+    position: relative;
+    margin:7% auto;
+    padding:0 0 20px 0;
+    background-color: #fafafa;
+    color:#333;
+    border-radius: 3px;
+    width:50%;
+}
+a.popupSuccess-cerrar {
+    position: absolute;
+    top:3px;
+    right:3px;
+    /*background-color: #333;*/
+    background-color: lightseagreen;
+    padding:7px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 1;
+    color:#fff;
+}
+
+#popupSuccess {
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:0;
+    /* Animación que durará 2 segundos*/
+    animation:autopopup 2s;
+}

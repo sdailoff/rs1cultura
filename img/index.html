@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.87.0">
+    <title>Checkout example · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/checkout/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+     
+      <h2>Formulario de carga de información en los puntos te testeo de la RS1</h2>
+      <p class="lead">La mejor planilla ever :)</p>
+    </div>
+    <div class="row g-12">
+    
+      <div class="col-md-12 col-lg-12">
+        <h4 class="mb-3">ESTABLECIMIENTO</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-4">
+              <label for="firstName" class="form-label">Lugar</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+           <div class="col-md-4">
+              <label for="country" class="form-label">Establecimiento</label>
+              <select class="form-select" id="country" required>
+                <option value="">Elegir punto</option>
+                <option>CPA</option>
+                <option>Puerto</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <label for="lastName" class="form-label">Fecha</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+                  <div class="col-md-12 col-lg-12">
+       
+          
+          <hr class="my-4">
+          <h4 class="mb-3">IDENTIFICACIÓN DE CASO</h4>
+
+          <div class="row col-12">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Apellido y nombre</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Requerido.
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <label for="lastName" class="form-label">DNI</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Requerido.
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <label for="lastName" class="form-label">Nacionalidad</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Requerido.
+              </div>
+
+            </div>
+            <div class="col-md-4">
+              <label for="country" class="form-label">Género</label>
+              <select class="form-select" id="country" required>
+                <option value="">Elegir género</option>
+                <option>Femenino</option>
+                <option>Masculino</option>
+                <option>No binarie</option>
+                <option>Otro género</option>
+              </select>
+              <div class="invalid-feedback">
+                Requerido.
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <label for="lastName" class="form-label">Fecha de nacimiento</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Requerido.
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <label for="country" class="form-label">Obra social</label>
+              <select class="form-select" id="country" required>
+                <option value="">Elegir cobertura</option>
+                <option>Sin cobertura</option>
+                <option>IOMA</option>
+                <option>Otra OOSS del Estado (PAMI, IOSFA, etc.)</option>
+                <option>Otra cobertura (OOSS, prepaga, etc.)</option>
+              </select>
+              <div class="invalid-feedback">
+                Requerido.
+              </div>
+            </div>
+
+         
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Requerido.
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <label for="lastName" class="form-label">Localidad</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Requerido.
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <label for="lastName" class="form-label">CP</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Requerido.
+              </div>
+
+            </div>
+            <div class="col-6">
+              <label for="username" class="form-label">Número de teléfono</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">+54 9</span>
+                <input type="text" class="form-control" id="username" placeholder="SIN 0, NI 15" required>
+              <div class="invalid-feedback">
+                  Requerido.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <label for="email" class="form-label">Correo electrónico <span class="text-muted">(Preferentemente)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Requerido.
+              </div>
+            </div>
+            <hr class="my-4">
+
+ <h4 class="mb-3">CLASIFICACIÓN</h4>
+        
+          <div class="row my-12">
+            <div class="col-md-3 form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Caso sospechoso</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Asintomático</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">Derivado CETEC</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">Clínico epidemiológico</label>
+            </div>
+          </div>
+<h5 class="mb-3">Si corresponde, indicar:</h5>
+          <div class="col-sm-3">
+              <label for="lastName" class="form-label">Fecha de inicio <br> de síntomas</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Requerido.
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <label for="lastName" class="form-label">Fecha de último <br> contacto estrecho</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Requerido.
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Nombre y/o DNI de la <br> persona caso índice</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Requerido.
+              </div>
+            </div>
+          <hr class="my-4">
+          <h4 class="mb-3">INFORMACIÓN CLÍNICA</h4>
+          
+           <h4 class="mb-3">Vacunación COVID</h4>  
+           <div class="row col-md-12">
+            <div class="col-md-3">
+              <label for="country" class="form-label">Número de dosis</label>
+              <select class="form-select" id="country" required>
+                <option value="">Cantidad de dosis</option>
+                <option>0 (no vacunado/a)</option>
+                <option>1 dosis</option>
+                <option>2 dosis</option>
+              </select>
+              <div class="invalid-feedback">
+                Requerido.
+              </div>
+            </div>
+ 
+         
+            <div class="col-md-3">
+              <label for="country" class="form-label">Vacunado/a</label>
+              <select class="form-select" id="country" required>
+                <option value="">Elegir vacuna</option>
+                <option>Sputnik V</option>
+                <option>Astrazeneca/COVISHIELD</option>
+                <option>Sinopharm</option>
+                <option>Moderna</option>
+                <option>CanSino</option>
+                <option>Pfizer</option>
+              </select>
+              <div class="invalid-feedback">
+                Requerido.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="country" class="form-label">¿Inscripto en campaña?</label>
+              <select class="form-select" id="country" required>
+                <option value="">Seleccione</option>
+                <option>Si</option>
+                <option>No</option>
+              </select>
+              <div class="invalid-feedback">
+                Requerido.
+              </div>
+            </div>
+
+
+
+            <div class="col-sm-3">
+              <label for="lastName" class="form-label">Fecha de última dosis</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Requerido.
+              </div>
+</div>
+            
+          </div>
+<br>
+<br>
+<h4 class="mb-3">Síntomas</h4> 
+
+          <div class="row col-md-12">
+            <div class="col-md-3 form-check">
+              <input id="credit" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="credit">Fiebre menor a 38°</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="debit" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Tos</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="paypal" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">Anosmia</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="paypal1" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="paypal1">Vómitos</label>
+            </div>
+          </div>
+          <div class="row col-md-12">
+            <div class="col-md-3 form-check">
+              <input id="credit2" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="credit2">Fiebre mayor a 38°</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="debit3" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="debit3">Odinofagia</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="paypal9" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="paypal9">Disgeusia</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="paypal4" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="paypal4">Disnea</label>
+            </div>
+          </div>
+          <div class="row col-md-12">
+            <div class="col-md-3 form-check">
+              <input id="credit5" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="credit5">Cefalea</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="debit6" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="debit6">Mialgias</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="paypal7" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="paypal7">Diarrea</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="paypal8" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="paypal8">Rinitis/Congestión</label>
+            </div>
+            <div class="col-md-12 mt-3">
+              <div class="input-group has-validation">
+                <span class="input-group-text">Otros</span>
+                <input type="text" class="form-control" id="username" placeholder="Otros síntomas">
+              </div>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <h4 class="mb-3">Condiciones previas / Co-morbilidades</h4> 
+          
+          <div class="col-md-3 form-check">
+              <input id="credit" name="paymentMethod" type="checkbox" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Gestante</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="debit" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Puerperio</label>
+            </div>
+
+           <br>
+           <br>
+
+          <div class="row col-md-12">
+            <div class="col-md-3 form-check">
+              <input id="credit" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="credit">Obesidad /SP</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="debit" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Asma</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="paypal" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">Insuf. Cardíaca</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="paypal1" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="paypal1">Enf. Hepática</label>
+            </div>
+          </div>
+          <div class="row col-md-12">
+            <div class="col-md-3 form-check">
+              <input id="credit2" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="credit2">HTA</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="debit3" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="debit3">EPOC</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="paypal9" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="paypal9">Insuf. Renal</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="paypal4" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="paypal4">Enf. Neurológica</label>
+            </div>
+          </div>
+          <div class="row col-md-12">
+            <div class="col-md-3 form-check">
+              <input id="credit5" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="credit5">Diabetes</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="debit6" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="debit6">Fumador</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="paypal7" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="paypal7">Enf. Oncológica</label>
+            </div>
+            <div class="col-md-3 form-check">
+              <input id="paypal8" name="paymentMethod" type="checkbox" class="form-check-input" required>
+              <label class="form-check-label" for="paypal8">Inmunosupresión</label>
+            </div>
+            <div class="col-md-12 mt-3">
+              <div class="input-group has-validation">
+                <span class="input-group-text">Otras</span>
+                <input type="text" class="form-control" id="username" placeholder="Otras enfermerdades">
+              </div>
+            </div>
+          </div>
+
+         
+          <hr class="my-4">
+          <h4 class="mb-3">CONTACTOS ESTRECHOS (PERSONAS CON LAS QUE ESTUVO EN CONTACTO DESDE 48 HS. ANTES DEL INICIO DE LOS SÍNTOMAS)</h4>
+          <h5 class="mb-3">Priorizar no convivientes de riesgo.</h5>
+<div class="row col-12">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Apellido y nombre</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="">
+          
+            </div>
+
+            <div class="col-sm-3">
+              <label for="lastName" class="form-label">DNI</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="">
+              
+            </div>
+
+            <div class="col-sm-3">
+              <label for="lastName" class="form-label">Teléfono</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="">
+              
+            </div>
+
+            <div class="col-sm-6">
+              
+              <input type="text" class="form-control" id="firstName" placeholder="" value="">
+          
+            </div>
+
+            <div class="col-sm-3">
+              
+              <input type="text" class="form-control" id="lastName" placeholder="" value="">
+              
+            </div>
+
+            <div class="col-sm-3">
+              
+              <input type="text" class="form-control" id="lastName" placeholder="" value="">
+              
+            </div>
+<div class="col-sm-6">
+              
+              <input type="text" class="form-control" id="firstName" placeholder="" value="">
+          
+            </div>
+
+            <div class="col-sm-3">
+              
+              <input type="text" class="form-control" id="lastName" placeholder="" value="">
+              
+            </div>
+
+            <div class="col-sm-3">
+              
+              <input type="text" class="form-control" id="lastName" placeholder="" value="">
+              
+            </div>
+            <div class="col-sm-6">
+              
+              <input type="text" class="form-control" id="firstName" placeholder="" value="">
+          
+            </div>
+
+            <div class="col-sm-3">
+              
+              <input type="text" class="form-control" id="lastName" placeholder="" value="">
+              
+            </div>
+
+            <div class="col-sm-3">
+              
+              <input type="text" class="form-control" id="lastName" placeholder="" value="">
+              
+            </div>
+            <div class="col-sm-6">
+              
+              <input type="text" class="form-control" id="firstName" placeholder="" value="">
+          
+            </div>
+
+            <div class="col-sm-3">
+              
+              <input type="text" class="form-control" id="lastName" placeholder="" value="">
+              
+            </div>
+
+            <div class="col-sm-3">
+              
+              <input type="text" class="form-control" id="lastName" placeholder="" value="">
+              
+            </div>
+
+            <br>
+<hr class="my-4">
+            <!-- +++++++ hasta acá llegué +++++++++++ --> 
+
+           
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Continuar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2021 Región Sanitaria I</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="form-validation.js"></script>
+  </body>
+</html>
